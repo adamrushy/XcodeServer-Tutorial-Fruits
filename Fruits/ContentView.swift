@@ -63,6 +63,7 @@ struct ContentView: View {
 			NavigationView {
 				List(fruits) { fruit in
 					FruitRow(fruit: fruit)
+						.accessibility(identifier: "fruit-row")
 				}
 			}
 			.navigationBarTitle("Fruits")
