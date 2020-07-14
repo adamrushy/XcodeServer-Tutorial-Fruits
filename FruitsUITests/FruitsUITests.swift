@@ -43,7 +43,7 @@ class FruitsUITests: XCTestCase {
 
 		let fruitRow = app.cells
 		if fruitRow.firstMatch.waitForExistence(timeout: 5) {
-			XCTAssert(fruitRow.firstMatch.label == "Banana 🍌")
+			XCTAssert(fruitRow.firstMatch.label.contains("🍌"))
 		}
 	}
 }
