@@ -310,7 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "Fruits/Preview\\ Content";
-				DEVELOPMENT_TEAM = FEPLPEL798;
+				DEVELOPMENT_TEAM = A9WFR3T443;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fruits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adrapps.Fruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrapps.FruitsTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,7 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "Fruits/Preview\\ Content";
-				DEVELOPMENT_TEAM = FEPLPEL798;
+				DEVELOPMENT_TEAM = A9WFR3T443;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fruits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adrapps.Fruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrapps.FruitsTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
