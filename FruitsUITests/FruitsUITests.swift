@@ -41,9 +41,17 @@ class FruitsUITests: XCTestCase {
 		let app = XCUIApplication()
 		app.launch()
 
-		let fruitRow = app.cells
-		if fruitRow.firstMatch.waitForExistence(timeout: 5) {
-			XCTAssert(fruitRow.firstMatch.label.contains("🍌"))
-		}
+		let fruitRow = app.cells.allElementsBoundByIndex
+		let row = fruitRow.filter { $0.label.contains("🍌" ) }
+		XCTAssertNotNil(row)
+	}
+
+	func testWeHaveACherryCell() throws {
+		let app = XCUIApplication()
+		app.launch()
+
+		let fruitRow = app.cells.allElementsBoundByIndex
+		let row = fruitRow.filter { $0.label.contains("🍒" ) }
+		XCTAssertFalse(row.isEmpty)
 	}
 }
