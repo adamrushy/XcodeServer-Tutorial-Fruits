@@ -41,8 +41,8 @@ class FruitsUITests: XCTestCase {
 		let app = XCUIApplication()
 		app.launch()
 
-		let fruitRow = app.cells.allElementsBoundByIndex
-		let row = fruitRow.filter { $0.label.contains("🍌" ) }
+		let cells = app.cells.allElementsBoundByIndex
+		let row = cells.filter { $0.label.contains("🍌" ) }
 		XCTAssertNotNil(row)
 	}
 
@@ -50,8 +50,8 @@ class FruitsUITests: XCTestCase {
 		let app = XCUIApplication()
 		app.launch()
 
-		let fruitRow = app.cells.allElementsBoundByIndex
-		let row = fruitRow.filter { $0.label.contains("🍒" ) }
+		let cells = app.cells.allElementsBoundByIndex
+		let row = cells.filter { $0.label.contains("🍒" ) }
 		XCTAssertFalse(row.isEmpty)
 	}
 }
