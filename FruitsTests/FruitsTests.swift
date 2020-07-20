@@ -33,16 +33,33 @@
 import XCTest
 
 class FruitsTests: XCTestCase {
+	var fruits: [Fruit] = []
+
   override func setUpWithError() throws {
-		// Put setup code here. This method is called before the invocation of each test method in the class.
+		fruits = loadJson(filename: "mock")
 	}
 
-	override func tearDownWithError() throws {
-		// Put teardown code here. This method is called after the invocation of each test method in the class.
+	func testDecodingJSONCorrectly() throws {
+		XCTAssertNotNil(fruits)
 	}
 
-	func testExample() throws {
-		// This is an example of a functional test case.
-		// Use XCTAssert and related functions to verify your tests produce the correct results.
+	func testFruitsContainsBanana() throws {
+		XCTAssert(fruits.contains { $0.name == "Banana 🍌" })
+	}
+}
+
+extension FruitsTests {
+	private func loadJson(filename fileName: String) -> [Fruit] {
+		if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+			do {
+				let data = try Data(contentsOf: url)
+				let decoder = JSONDecoder()
+				let jsonData = try decoder.decode([Fruit].self, from: data)
+				return jsonData
+			} catch {
+				print("Error getting JSON:\(error)")
+			}
+		}
+		return []
 	}
 }

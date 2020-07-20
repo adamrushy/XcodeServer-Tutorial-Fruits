@@ -16,6 +16,7 @@
 		BE2E37A024C58E8300A4E76C /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = BE2E379F24C58E8300A4E76C /* mock.json */; };
 		BE2E37A324C5930700A4E76C /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E37A224C5930700A4E76C /* FruitViewModel.swift */; };
 		BE2E37A624C5934300A4E76C /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E37A524C5934300A4E76C /* Fruit.swift */; };
+		BE2E37A924C59A9F00A4E76C /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E37A524C5934300A4E76C /* Fruit.swift */; };
 		BE60341F24BE514C004D2381 /* FruitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60341E24BE514C004D2381 /* FruitsUITests.swift */; };
 		BE60342D24BF58B3004D2381 /* FruitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60342C24BF58B3004D2381 /* FruitsTests.swift */; };
 /* End PBXBuildFile section */
@@ -107,15 +108,12 @@
 		18D775BF22AD944300AE281E /* Fruits */ = {
 			isa = PBXGroup;
 			children = (
+				BE2E37A824C593A000A4E76C /* Resources */,
+				BE2E37A724C5939000A4E76C /* Views */,
 				BE2E37A424C5933B00A4E76C /* Models */,
 				BE2E37A124C592F400A4E76C /* ViewModels */,
 				18D775C022AD944300AE281E /* AppDelegate.swift */,
 				18D775C222AD944300AE281E /* SceneDelegate.swift */,
-				18D775C422AD944300AE281E /* ContentView.swift */,
-				18D775C622AD944400AE281E /* Assets.xcassets */,
-				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
-				18D775CE22AD944400AE281E /* Info.plist */,
-				BE2E379F24C58E8300A4E76C /* mock.json */,
 				18D775C822AD944400AE281E /* Preview Content */,
 			);
 			path = Fruits;
@@ -143,6 +141,25 @@
 				BE2E37A524C5934300A4E76C /* Fruit.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BE2E37A724C5939000A4E76C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18D775C422AD944300AE281E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE2E37A824C593A000A4E76C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E379F24C58E8300A4E76C /* mock.json */,
+				18D775C622AD944400AE281E /* Assets.xcassets */,
+				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
+				18D775CE22AD944400AE281E /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BE60341D24BE514C004D2381 /* FruitsUITests */ = {
@@ -336,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2E37A924C59A9F00A4E76C /* Fruit.swift in Sources */,
 				BE60342D24BF58B3004D2381 /* FruitsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,7 +510,7 @@
 				DEVELOPMENT_ASSET_PATHS = "Fruits/Preview\\ Content";
 				DEVELOPMENT_TEAM = A9WFR3T443;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Fruits/Info.plist;
+				INFOPLIST_FILE = Fruits/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +533,7 @@
 				DEVELOPMENT_ASSET_PATHS = "Fruits/Preview\\ Content";
 				DEVELOPMENT_TEAM = A9WFR3T443;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Fruits/Info.plist;
+				INFOPLIST_FILE = Fruits/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
