@@ -48,7 +48,6 @@ struct ContentView: View {
 			NavigationView {
 				List(viewModel.fruits) { fruit in
 					FruitRow(fruit: fruit)
-						.accessibility(identifier: "fruit-row")
 				}
 				.onAppear {
 					self.viewModel.loadFruits()
