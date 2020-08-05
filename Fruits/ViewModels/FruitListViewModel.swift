@@ -32,7 +32,7 @@
 
 import Foundation
 
-class ViewModel: ObservableObject {
+class FruitListViewModel: ObservableObject {
 	@Published private(set) var fruits: [Fruit] = []
 
 	func loadFruits() {

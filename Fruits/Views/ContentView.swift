@@ -41,7 +41,7 @@ struct FruitRow: View {
 }
 
 struct ContentView: View {
-	@ObservedObject var viewModel = ViewModel()
+	@ObservedObject var viewModel = FruitListViewModel()
 
 	var body: some View {
 		return
@@ -53,7 +53,7 @@ struct ContentView: View {
 					self.viewModel.loadFruits()
 				}
 				.navigationBarTitle("Fruits")
-			}
+			}.navigationViewStyle(StackNavigationViewStyle())
 	}
 }
 
